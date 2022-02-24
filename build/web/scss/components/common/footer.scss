@@ -1,0 +1,88 @@
+.footer {
+  font-family: $basic-font;
+  background-color: #101010;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  &__logo {
+    margin-right: 20px;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: $basic-grey;
+  }
+
+  &__address {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(68, 68, 68);
+  }
+
+  &__left {
+    display: -webkit-box;
+  }
+
+  &__location {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: $basic-white;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    color: $basic-white;
+    margin: 50px 0;
+  }
+
+  &__navigation > div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  &__header {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: $basic-dark-grey;
+    margin-bottom: 35px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $basic-white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  &__rights {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__right {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: $basic-dark-grey;
+  }
+
+  &__offer,
+  &__agreement {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: $basic-white;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,137 @@
+.business {
+  padding-top: 160px;
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__button-services {
+    border: 1px solid #da4533;
+    background: none;
+    color: #da4533;
+    font-size: 16px;
+    border-radius: 50%;
+    padding: 9px 21px;
+    position: relative;
+    left: -17px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 15px;
+    left: 109px;
+    transition: 0.2s;
+  }
+
+  &__button-services:hover {
+    .arrow {
+      left: 116px;
+    }
+  }
+
+  &__banner {
+    font-family: $basic-font;
+    background-color: $basic-bg-header-color;
+    color: $basic-grey;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+
+    &-link {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    &-shape {
+      text-align: end;
+    }
+
+    &-image {
+      text-align: center;
+      margin: 48px 0 30px 0;
+    }
+
+    &-header {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 29px;
+      margin-bottom: 6px;
+    }
+
+    &-text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 23px;
+    }
+  }
+
+  &__banner:hover {
+    .business__banner-shape svg path {
+      transition: 0.2s;
+      stroke: #ffffff;
+    }
+
+    .business__banner-header {
+      transition: 0.2s;
+      color: $white-text-color;
+    }
+  }
+
+  &__swiper-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 160px 0;
+  }
+
+  &__button-prev,
+  &__button-next {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 1px solid $basic-red;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+  }
+  &__button-prev {
+    margin-right: 20px;
+  }
+
+  &__button-arrow-prev,
+  &__button-arrow-next {
+    position: absolute;
+    transition: 0.2s;
+    top: 16px;
+  }
+  &__button-prev:hover {
+    .business__button-arrow-prev {
+      left: -23px;
+    }
+  }
+
+  &__button-next:hover {
+    .business__button-arrow-next {
+      left: 19px;
+    }
+  }
+
+  &__button-arrow-prev {
+    left: -16px;
+  }
+
+  &__button-arrow-next {
+    left: 11px;
+  }
+}

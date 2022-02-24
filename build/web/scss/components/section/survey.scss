@@ -1,0 +1,144 @@
+.survey {
+  background-image: url('../../../img/background/backgroud_red.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 160px 0;
+
+  &__header {
+    font-family: $basic-STIX-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    color: $white-text-color;
+  }
+
+  &__description {
+    font-family: $basic-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: $white-text-color;
+    opacity: 0.75;
+    margin: 16px 0 50px 0;
+  }
+
+  &__quiz {
+    padding: 40px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    width: 73%;
+    background-color: $basic-black;
+  }
+
+  &__quiz-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__gain {
+    font-family: $basic-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: $white-text-color;
+  }
+
+  &__count {
+    font-family: $basic-STIX-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: $white-text-color;
+
+    .red-count {
+      color: $basic-red;
+    }
+  }
+
+  &__answers {
+    color: $white-text-color;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 15px;
+    font-family: $basic-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__answer {
+    padding: 18px 20px;
+    background-color: $basic-bg-button-color;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  &__answer:hover {
+    background-color: $basic-red;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 14px 0 14px;
+  }
+
+  &__button-prev {
+    .arrow {
+      position: absolute;
+      left: -15px;
+      top: 13px;
+      transition: 0.2s;
+    }
+  }
+
+  &__button-next {
+    .arrow {
+      position: absolute;
+      top: 13px;
+      left: 73px;
+      transition: 0.2s;
+    }
+  }
+
+  &__button-prev:hover {
+    .arrow {
+      left: -21px;
+    }
+  }
+
+  &__button-next:hover {
+    .arrow {
+      left: 79px;
+    }
+  }
+
+  &__bonus {
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: $white-text-color;
+
+    &-blocks {
+      display: flex;
+    }
+
+    &-block {
+      display: flex;
+      background-color: $basic-black;
+      color: $white-text-color;
+      line-height: 29px;
+      border-radius: 10px;
+      padding: 15px;
+      margin-right: 20px;
+    }
+
+    &-text {
+      margin: auto 0 auto 15px;
+    }
+  }
+}

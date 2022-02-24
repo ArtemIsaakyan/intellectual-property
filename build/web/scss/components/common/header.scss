@@ -1,0 +1,62 @@
+.header {
+  color: $basic-white;
+  background-color: $basic-bg-header-color;
+  padding: 19px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin: auto 0;
+  }
+
+  &__center {
+    margin: auto 0;
+  }
+
+  &__nav {
+    margin: auto 0;
+  }
+
+  &__tel {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: $basic-white;
+    margin-right: 20px;
+  }
+
+  &__consultetion {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: $basic-red;
+  }
+
+  &__lists {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+
+  &__list:nth-child(2) {
+    margin: 0 30px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $basic-white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  &__link:hover {
+    color: $basic-red;
+    transition: 0.2s;
+  }
+}

@@ -1,0 +1,150 @@
+.forum {
+  font-family: $basic-font;
+  padding-bottom: 160px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: $basic-dark-grey;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: $basic-red;
+  }
+
+  &__link:nth-child(1) {
+    margin-right: 20px;
+  }
+
+  &__head {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    border-bottom: 1px solid black;
+  }
+
+  &__block:last-child {
+    border-bottom: none;
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: $basic-text-color;
+  }
+
+  &__position {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: $basic-grey;
+  }
+
+  &__left {
+    display: flex;
+  }
+
+  &__avatar {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  &__avatar {
+    margin-right: 15px;
+  }
+
+  &__info,
+  &__center,
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__right {
+    text-align: center;
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: $basic-black;
+    margin-bottom: 5px;
+  }
+
+  &__position {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: $basic-dark-grey;
+  }
+
+  &__place {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: $basic-black;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 5px;
+    color: $basic-dark-grey;
+  }
+
+  &__date {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: $basic-black;
+    margin-bottom: 5px;
+  }
+
+  &__time {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: $basic-black;
+  }
+}
+
+.gradient-demo-red {
+  background-color: #eee;
+  height: 1px;
+  width: 100%;
+}
+
+.gradient-demo-red::before {
+  background: #da4533;
+  background: linear-gradient(to right, #da4533 0%, rgba(218, 69, 51, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#999999', GradientType=1);
+  content: '';
+  display: block;
+  height: 1.11px;
+  width: 100%;
+}

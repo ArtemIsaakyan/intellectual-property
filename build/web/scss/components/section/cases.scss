@@ -1,0 +1,143 @@
+.cases {
+  background-color: $basic-bg-body-color;
+  padding: 160px 0;
+
+  &__header {
+    font-family: $basic-STIX-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    color: $white-text-color;
+    margin: 0 0 16px 0;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    font-family: $basic-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: $basic-grey;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 15px;
+    left: 109px;
+    transition: 0.2s;
+  }
+
+  &__button-services:hover {
+    .arrow {
+      left: 116px;
+    }
+  }
+
+  &__banner {
+    display: flex;
+    border-radius: 8px;
+    font-family: $basic-font;
+
+    &-left img {
+      border-radius: 8px 0px 0px 8px;
+    }
+
+    &-right {
+      padding: 20px 20px 0 20px;
+      height: 289px;
+      position: relative;
+      border-radius: 0 8px 8px 0;
+      background-color: $basic-grey-light;
+    }
+
+    &-link {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    &-shape {
+      text-align: end;
+    }
+
+    &-header {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 25px;
+      width: 230px;
+      margin-top: 36px;
+      color: $white-text-color;
+    }
+
+    &-text {
+      width: 289px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 23px;
+      margin-top: 5px;
+      color: $basic-grey;
+    }
+  }
+
+  &__banner-right:hover {
+    .cases__banner-shape svg path {
+      transition: 0.2s;
+      stroke: #ffffff;
+    }
+  }
+
+  &__swiper-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 160px 0;
+  }
+
+  &__button-prev,
+  &__button-next {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 1px solid $basic-red;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+  }
+  &__button-prev {
+    margin-right: 20px;
+  }
+
+  &__button-arrow-prev,
+  &__button-arrow-next {
+    position: absolute;
+    transition: 0.2s;
+    top: 16px;
+  }
+  &__button-prev:hover {
+    .cases__button-arrow-prev {
+      left: -23px;
+    }
+  }
+
+  &__button-next:hover {
+    .cases__button-arrow-next {
+      left: 19px;
+    }
+  }
+
+  &__button-arrow-prev {
+    left: -16px;
+  }
+
+  &__button-arrow-next {
+    left: 11px;
+  }
+}

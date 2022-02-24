@@ -1,0 +1,63 @@
+.consultation {
+  padding-top: 57px;
+  padding-bottom: 80px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    margin-top: 52px;
+  }
+
+  &__header {
+    font-family: $basic-STIX-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 51px;
+    color: $basic-white;
+  }
+
+  &__description {
+    font-family: $basic-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25 px;
+    color: $basic-white;
+    opacity: 0.75;
+    margin: 20px 0 30px 0;
+  }
+
+  &__button-consultation {
+    border: 0;
+    background: $basic-black;
+    color: $white-text-color;
+    font-size: 16px;
+    padding: 24px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__button-consultation:before {
+    content: '';
+    border: none;
+    position: absolute;
+    width: 238px;
+    height: 83px;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    transition: 0.2s;
+    transform: rotate(0deg);
+  }
+
+  &__button-consultation:hover:before {
+    border: 1px solid white;
+
+    transform: rotate(-5deg);
+  }
+}

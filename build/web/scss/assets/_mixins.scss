@@ -1,0 +1,99 @@
+/*
+small: till 376
+medium: from 377 till 768
+large: from 769 till 1000
+xlarge: from 1001 till 1200
+xxlarge: from 1201
+*/
+
+
+@mixin sm-only {
+  @media all and (max-width: #{$screen-sm-min - 1}) {
+    @content;
+  }
+}
+
+@mixin md-only {
+  @media all and (min-width: #{$screen-sm-min + 1}) and (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin sm-md {
+  @media all and (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin from-md {
+  @media all and (min-width: #{$screen-sm-min + 1}) {
+    @content;
+  }
+}
+
+@mixin lg-only {
+  @media all and (min-width: #{$screen-md-min + 1}) and (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin sm-lg {
+  @media all and (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin from-lg {
+  @media all and (min-width: #{$screen-md-min + 1}) {
+    @content;
+  }
+}
+
+
+@mixin xlg-only {
+  @media all and (min-width: #{$screen-lg-min + 1}) and (max-width: #{$screen-xlg-min}) {
+    @content;
+  }
+}
+
+@mixin from-xlg {
+  @media all and (min-width: #{$screen-lg-min + 1}) {
+    @content;
+  }
+}
+
+@mixin from-xxlg {
+  @media all and (min-width: #{$screen-xlg-min + 1}) {
+    @content;
+  }
+}
+
+@mixin md-xxlg {
+  @media (min-width: #{$screen-sm-min + 1}) and (max-width: #{$screen-xlg-min}) {
+    @content;
+  }
+}
+
+@mixin sm-xxlg {
+  @media all and (max-width: #{$screen-xlg-min}) {
+    @content;
+  }
+}
+
+@mixin sm-xxxlg {
+  @media all and (max-width: #{$screen-xxlg-min}) {
+    @content;
+  }
+}
+
+@mixin xxlg-only {
+  @media (min-width: #{$screen-xlg-min + 1}) and (max-width: #{$screen-xxlg-min - 1}) {
+    @content;
+  }
+}
+
+@mixin from-xxxlg {
+  @media all and (min-width: #{$screen-xxlg-min}) {
+    @content;
+  }
+}
